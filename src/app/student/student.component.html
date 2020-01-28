@@ -1,0 +1,38 @@
+<br/>
+<br/>
+
+<br/>
+<br/>
+<br/>
+
+
+ <div class="container">
+    <div class="jumbotron">
+  <div class="col-md-6 offset-md-3">
+<h4>Student List</h4>
+
+<button [routerLink]="'/student/add-student'" class="btn btn-success">ADD STUDENT</button>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+        <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let student of students">
+    <tr>
+
+      <th scope="row">1</th>
+      <td>{{student.id}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.emailId}}</td>
+      <td><a [routerLink]="['/subject', student.id]">Edit</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+    </div></div>
