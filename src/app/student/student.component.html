@@ -29,7 +29,8 @@
       <td>{{student.id}}</td>
       <td>{{student.name}}</td>
       <td>{{student.emailId}}</td>
-      <td><a [routerLink]="['/subject', student.id]">Edit</a></td>
+      <td>{{student.password}}</td>
+      <td><a [routerLink]="['/edit-student',1]">Edit</a></td>
     </tr>
    
   </tbody>

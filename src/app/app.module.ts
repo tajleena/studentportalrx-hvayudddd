@@ -9,12 +9,14 @@ import {APP_LAZY_ROUTING} from './app.lazy.routing';
 import {RouterModule} from "@angular/router";
 import { StudentComponent } from './student/student.component';
 import { AddStudentComponent } from './student/add-student/add-student.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { EditStudentComponent } from './student-details/edit-student/edit-student.component';
 
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_LAZY_ROUTING,RouterModule ],
-  declarations: [ AppComponent, HelloComponent, SigninComponent, StudentComponent, AddStudentComponent ],
+  declarations: [ AppComponent, HelloComponent, SigninComponent, StudentComponent, AddStudentComponent, StudentDetailsComponent, EditStudentComponent ],
   bootstrap:    [ AppComponent ],
   exports:[RouterModule]
 })
