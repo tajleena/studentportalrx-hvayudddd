@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -15,7 +15,7 @@ import { EditStudentComponent } from './student-details/edit-student/edit-studen
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,APP_LAZY_ROUTING,RouterModule ],
+  imports:      [ BrowserModule, FormsModule,ReactiveFormsModule, APP_LAZY_ROUTING,RouterModule ],
   declarations: [ AppComponent, HelloComponent, SigninComponent, StudentComponent, AddStudentComponent, StudentDetailsComponent, EditStudentComponent ],
   bootstrap:    [ AppComponent ],
   exports:[RouterModule]
